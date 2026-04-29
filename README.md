@@ -74,6 +74,7 @@ python launch.py --medvram --autolaunch --xformers
 | `--lowvram` | Enable optimizations for GPUs with very low VRAM |
 | `--xformers` | Enable xformers for cross attention layers |
 | `--autolaunch` | Open the UI in the browser automatically on startup |
+| `--theme` | Set the UI theme: `light` or `dark` (I prefer `dark`) |
 
 ## Contributing
 
@@ -81,10 +82,3 @@ Pull requests are welcome. Please read the [contributing guidelines](.github/pul
 
 ### Development Setup
 
-```bash
-git clone https://github.com/your-org/stable-diffusion-webui
-cd stable-diffusion-webui
-python -m venv venv
-source venv/bin/activate  # on Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
