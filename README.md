@@ -58,8 +58,8 @@ python launch.py
 # Run with specific options
 python launch.py --share --listen --port 7860
 
-# My preferred setup: medvram for my 6GB GPU, auto-open browser
-python launch.py --medvram --autolaunch
+# My preferred setup: medvram for my 6GB GPU, auto-open browser, xformers for speed
+python launch.py --medvram --autolaunch --xformers
 ```
 
 ### Common Arguments
@@ -85,6 +85,6 @@ Pull requests are welcome. Please read the [contributing guidelines](.github/pul
 git clone https://github.com/your-org/stable-diffusion-webui
 cd stable-diffusion-webui
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements-dev.
+source venv/bin/activate  # on Windows: venv\Scripts\activate
+pip install -r requirements.txt
 ```
