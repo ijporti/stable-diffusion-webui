@@ -57,6 +57,9 @@ python launch.py
 
 # Run with specific options
 python launch.py --share --listen --port 7860
+
+# My preferred setup: medvram for my 6GB GPU, auto-open browser
+python launch.py --medvram --autolaunch
 ```
 
 ### Common Arguments
@@ -70,6 +73,7 @@ python launch.py --share --listen --port 7860
 | `--medvram` | Enable optimizations for GPUs with ~4GB VRAM |
 | `--lowvram` | Enable optimizations for GPUs with very low VRAM |
 | `--xformers` | Enable xformers for cross attention layers |
+| `--autolaunch` | Open the UI in the browser automatically on startup |
 
 ## Contributing
 
@@ -82,17 +86,5 @@ git clone https://github.com/your-org/stable-diffusion-webui
 cd stable-diffusion-webui
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements-dev.txt
+pip install -r requirements-dev.
 ```
-
-### Running Linters
-
-```bash
-# JavaScript linting
-npm install
-npm run lint
-```
-
-## License
-
-Released under the [AGPL-3.0 license](LICENSE).
