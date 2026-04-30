@@ -76,9 +76,10 @@ python launch.py --medvram --autolaunch --xformers
 | `--autolaunch` | Open the UI in the browser automatically on startup |
 | `--theme` | Set the UI theme: `light` or `dark` (I prefer `dark`) |
 
+## My Notes
+
+> **Personal reminders:** Models go in `models/Stable-diffusion/`. For best results on my machine (RTX 3060 6GB), I use `--medvram --xformers`. If VRAM errors occur, try adding `--no-half-vae`.
+
 ## Contributing
 
-Pull requests are welcome. Please read the [contributing guidelines](.github/pull_request_template.md) before submitting a PR.
-
-### Development Setup
-
+Pull requests are welcome. Please read the [contributing guidelines](.github/pull
