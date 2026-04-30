@@ -57,7 +57,8 @@ def prepare_environment():
     if not is_installed("torch"):
         torch_command = os.environ.get(
             "TORCH_COMMAND",
-            "install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118",
+            # Using cu121 instead of cu118 to match my RTX 3080 driver version
+            "install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121",
         )
         run_pip(torch_command, "torch")
 
@@ -105,8 +106,4 @@ def start():
 if __name__ == "__main__":
     check_python_version()
 
-    # Skip environment preparation if requested
-    if "--skip-prepare-environment" not in sys.argv:
-        prepare_environment()
-
-    start()
+    # Skip e
